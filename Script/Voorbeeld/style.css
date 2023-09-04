@@ -1,0 +1,104 @@
+/* instellingen */
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: lightsteelblue;
+    color: steelblue;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* vormgeving elementen */
+
+h2, p, ul li {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+ul li {
+    color: maroon;
+    list-style-type: '↪ ';
+}
+
+a {
+    color: tomato;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: dodgerblue;
+    text-decoration-line: underline;
+}
+
+header, main, footer {
+    margin: 0 10%;
+    border-bottom: 2px solid lightsteelblue;
+    background-color: azure;
+}
+
+header, .col, footer {
+    padding: 4vh 4vw;
+}
+
+/* vormgeving header */
+
+header {
+    margin-top: 2vh;
+    border-radius: 10px 10px 0 0;
+    background-color: lightcyan;
+}
+
+/* vormgeving main */
+
+main ul {
+    margin-left: 5%;
+}
+
+main li a {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    text-decoration-line: none;
+}
+
+main li a:hover {
+    background-color: white;
+    color: tomato;
+    text-decoration-line: underline;
+}
+
+#about {
+    display: flex;
+    padding: 4% 0;
+}
+
+.col {
+    flex: 1;
+}
+
+.left {
+    /* width: 30%; */
+    flex: 3;
+}
+
+.right {
+    /* width: 70%; */
+    flex: 7;
+    border-left: 2px dotted lightsteelblue;
+}
+
+/* vormgeving footer */
+
+footer {
+    border-radius: 0 0 10px 10px;
+}

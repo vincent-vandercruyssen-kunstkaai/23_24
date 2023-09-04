@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 2 !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bgcolor1: hsl(60, 85%, 95%);
+    --fcolor1: hsl(0, 11%, 8%);
+    --hcolor1: hsla(180, 9%, 54%, 0.25);
+    --hcolor2: hsla(180, 9%, 74%, 0.25);
+    --ucolor1: hsl(200, 85%, 55%);
+    --ucolor2: hsl(10, 65%, 55%);
+    --ncolor1: hsla(180, 5%, 75%, 0.15);
+    --ncolor2: hsla(180, 5%, 95%, 0.15);
+}
+
+html,
+body {
+    background-color: var(--bgcolor1);
+    color: var(--fcolor1);
+    font-family: 'Rubik', sans-serif;
+    font-size: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.lightmode {
+    background-color: var(--fcolor1);
+    color: var(--bgcolor1);
+}
+
+.wrap, .slide {
+    padding: 0 !important;
+}
+
+.mono {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+section {
+    border-top: 4px radial-gradient(ellipse at center, rgba(0, 20, 80, 0.2) 0, rgba(255, 255, 255, 0) 75%);
+    min-height: 40vh;
+    padding: 0;
+    text-align: center;
+}
+
+section#home {
+    min-height: 100vh;
+}
+
+section:first-child {
+    padding-top: 2em;
+}
+
+hr {
+    background: radial-gradient(var(--hcolor1), hsla(0, 0%, 100%, 0) 75%);
+    height: 0.1em;
+    margin: 1em auto 3em auto;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    padding: 0 2vw;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+h2::before {
+    content: '#';
+    font-size: 75%;
+    font-weight: 400;
+    position: absolute;
+    transform: translateX(-115%) translateY(22%);
+    opacity: 0.2;
+}
+
+.halfsize {
+    font-size: 40%;
+    opacity: 0.33;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 2.5em;
+}
+
+h3 {
+    padding: 0 10%;
+}
+
+h4, h5, p, form, ol, .noslides h1, .noslides h2, .noslides h3, .noslides .slide-grid, .noslides ul {
+    padding: 0 24%;
+}
+
+p:last-child {
+    margin-bottom: 2.5em;
+}
+
+form {
+    margin-bottom: 1.5em;
+}
+
+table {
+    padding: 0 25%;
+    margin: 0;
+    margin-bottom: 2em;
+    border-collapse: separate;
+}
+
+td {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.inwards {
+    padding: 0 15vw;
+}
+
+ol {
+    text-align: left;
+    list-style-type: decimal-leading-zero;
+}
+
+li {
+    margin: 0 !important;
+    padding: 0;
+    margin-bottom: 1em !important;
+}
+
+.img-grid {
+    max-width: 40vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+}
+
+img {
+    display: block;
+    z-index: 2;
+    filter: drop-shadow(0 0 1em hsla(0, 0%, 0%, 0.1));
+    transition: transform 110ms ease;
+}
+
+img:hover {
+    z-index: 3;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-decoration-color: var(--hcolor1);
+    text-underline-offset: 5%;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.tekst {
+    margin-bottom: 2em;
+}
+
+img.smaller {
+    margin: 0 auto;
+    width: 50%;
+}
+
+img.mgb {
+    margin-bottom: 2.5em;
+}
+
+img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover, code:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5%;
+    text-decoration-color: var(--hcolor1);
+}
+
+a {
+    /* text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5%; */
+    color: var(--ucolor1) !important;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--ucolor2) !important;
+}
+
+.slide-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+    padding: 0 20%;
+}
+
+.table-ten {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.table-ten li {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    margin: 0;
+}
+
+#navigation {
+    padding: 0;
+    bottom: 1em;
+    width: 20vw;
+}
+
+#counter {
+    top: 0.5em;
+}
+
+a#next,
+a#previous {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+    height: 4em;
+    padding: 0;
+    width: 0;
+}
+
+a#next {
+    right: 3.2rem;
+}
+
+a#previous {
+    left: 3.2rem;
+}
+
+xmp {
+    padding: 0;
+    margin: 0;
+    white-space: pre-line;
+}
+
+mark {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 15%;
+    text-decoration-color: hsl(25, 100%, 50%);
+    background-color: inherit;
+    padding: 0;
+}
+
+code {
+    background-color: var(--hcolor1);
+    font-size: 0.9rem;
+    text-align: left;
+    white-space: pre-line;
+    border-radius: 0.5ch;
+    max-width: 90ch;
+    padding: 0 3%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+}
+
+header {
+    font-family: 'IBM Plex Mono', monospace;
+    width: 15ch;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    user-select: none;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul.dropnav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li {
+    background-color: var(--ncolor1);
+    font-size: 0.7rem;
+    margin: 0 !important;
+}
+
+header nav ul li .dropsub li {
+    font-size: 0.6rem;
+}
+
+header nav ul li .dropsub li:hover {
+    background-color: var(--ncolor2);
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0.4em 2ch;
+}
+
+header nav ul.dropsub {
+    display: none;
+}
+
+header nav ul.dropsub li {
+    width: 100%;
+    text-align: right;
+}
+
+header nav .droplevel:hover .dropsub {
+    display: block;
+    width: 100%;
+}
+
+button#themetoggle {
+    background-image: linear-gradient(45deg, black 52%, white 50%);
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    font-size: 1rem;
+    border-width: .1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+input {
+    font-size: 1rem;
+    height: auto;
+    padding-left: 0.5em !important;
+    box-shadow: none;
+}
+
+input:hover {
+    box-shadow: none;
+}
+
+.formgrid {
+    text-align: left;
+    padding: 0 24%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.formgrid * {
+    padding: 0;
+}
+
+iframe {
+    background-color: white;
+    min-width: 55vw;
+    min-height: 85vh;
+    margin: 0 auto;
+}
+
+.noslides h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.noslides h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.noslides h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.noslides h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.noslides h5 {
+    font-weight: 500;
+}
+
+
+.mgmid {
+    margin: 0 auto;
+}
+
+.noslides ul li {
+    list-style-type: '↪ ';
+}
+
+[type="text"] {
+    width: 5ch;
+    height: 2em;
+}
+
+button {
+    text-transform: none;
+    font-size: 0.9rem;
+    height: auto;
+
+}
