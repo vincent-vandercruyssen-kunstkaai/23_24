@@ -80,3 +80,14 @@ a:hover {
     height: 100%;
     background-color: #e7e7e7;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (width <= 1000px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+  }
