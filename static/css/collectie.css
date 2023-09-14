@@ -83,7 +83,7 @@ a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (width <= 1000px) {
