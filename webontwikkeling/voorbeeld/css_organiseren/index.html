@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Organiseren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="column-container">
+            <h1>CSS Organiseren</h1>
+            <div>
+                <h2>Positionering</h2>
+                <ul>
+                    <li>position: <em>static, relative, absolute, fixed</em></li>
+                    <li>z-index: <em>geheel getal</em></li>
+                    <li>top: right: bottom: left: <em>px, rem, %</em></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Lay-out & zichtbaarheid</h2>
+                <ul>
+                    <li>display: <em>block, inline, inline-block, flex, grid</em></li>
+                    <li>column-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>flex-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>grid-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>overflow: <em>visible, hidden, clip, scroll</em></li>
+                    <li>opacity: <em>0.0 - 1.0, 0% - 100%</em></li>
+                    <li>transform: <em>gerelateerde eigenschappen</em></li>
+                    <li>filter: <em>gerelateerde eigenschappen</em></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Box model <span>van buiten naar binnen</span></h2>
+                <div class="box-model yellow-bg">
+                    <p>margin</p>
+                    <div class="box-model grey-bg">
+                        <p>border</p>
+                        <div class="box-model purple-bg">
+                            <p>padding</p>
+                            <div class="box-model blue-bg">
+                                width x height
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>margin: <em>rem, px, vw/vh</em></li>
+                    <li>box-sizing: <em>border-box</em></li>
+                    <li>border: <em>gerelateerde eigenschappen</em></li>
+                    <li>border-radius: <em>rem, px</em></li>
+                    <li>width: <em>%, rem, vw, px</em></li>
+                    <li>height: <em>%, rem, vh, px</em></li>
+                    <li>padding: <em>%, rem, vw/vh, px</em></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Inhoud <span>achtergrond & typografie</span></h2>
+                <ul>
+                    <li>background-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>color: <em>#rrggbb, rgb(), hsl()</em></li>
+                    <li>font-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>line-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>text-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>word-...: <em>gerelateerde eigenschappen</em></li>
+                    <li>letter-...: <em>gerelateerde eigenschappen</em></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Waarom? </h3>
+                <p>Het doel is om de vormgeving snel en makkelijk te begrijpen. We ordenen regels zo dat je snel de eigenschappen van een selector kunt scannen. </p>
+                <p>Begin met bepalen waar het element op de pagina staat en welke lay-out het nodig heeft. Pas daarna het box-model toe, van buiten naar binnen, tot aan de kleinste details binnenin. Groepeer eigenschappen die bij elkaar horen. Ga altijd met de klok mee: top, right, bottom, left. </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
