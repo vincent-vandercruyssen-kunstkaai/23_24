@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mysvg" viewBox="0 0 96 32"
+	preserveAspectRatio="xMidYMid meet">
+	<style type="text/css">
+		path {
+		fill:none;
+		stroke:#fff;
+		stroke-width:2;
+		stroke-width="2,20,30,10";
+		}
+	</style>
+	<g>
+		<rect x="0" y="0" width="96" height="32" />
+		<path d="M-8,32 Q0,0 16,16 T96,0" />
+	</g>
+</svg>  
