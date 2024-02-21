@@ -11,20 +11,20 @@
 </head>
 
 <body>
+  <div class="promo">
+    <a href="#">Gratis verzending boven €100 in Europa</a>
+  </div>
   <header>
-    <div class="promo">
-      <a href="#">Gratis verzending boven €200 in Europa</a>
-    </div>
     <div class="flex-container">
-      <div class="flex-item">
-        <input type="text" placeholder="Zoeken" />
+      <div class="flex-item ">
+        <input type="text" placeholder="🔍 Zoeken" />
       </div>
-      <div class="flex-item">
+      <div class="flex-item middle">
         <a href="#"><img src="static/svg/logo.svg" alt="logo" class="logo" /></a>
       </div>
       <div class="flex-item icons">
-        <a href="#"><img src="static/svg/icon_profile.svg" alt="profile" class="icon" /></a>
-        <a href="#"><img src="static/svg/icon_basket.svg" alt="basket" class="icon" /></a>
+        <a href="#"><img src="static/svg/icon_profiel.svg" alt="profile" class="icon" /></a>
+        <a href="#"><img src="static/svg/icon_tas.svg" alt="basket" class="icon" /></a>
       </div>
     </div>
     <nav>
@@ -39,49 +39,47 @@
   </header>
 
   <main>
-    <section id="herobanner">
-      <div class="cta-shop">
-        <h2>50% KORTING BIJ AANKOOP VAN 2 ITEMS</h2>
-        <a href="#"><span class="btn">Shop Dames</span></a>
-        <a href="#"><span class="btn">Shop Heren</span></a>
-      </div>
+    <section id="banner">
+      <h2> Our First Ever Store is Open!</h2>
+      <h4>Predikherenlei 2, Gent</h4>
+      <a href="#" class="btn">Shop Now</a>
     </section>
 
-    <section id="featured">
+    <section id="bestsellers">
       <h2>Bestsellers</h2>
       <div class="flex-container">
         <div class="flex-item">
           <a href="#">
-            <img src="static/img/bestseller-1.webp" alt="sneaker" />
-            <div class="flex-container description">
-              <div>
-                <h3>Top Sneaker</h3>
-                <p>Herenschoen</p>
-              </div>
+            <img src="static/img/best_4ybunks.webp" alt="bamba" />
+            <div>
+              <h3>4Y Bunks</h3>
               <p>€ 129,99</p>
             </div>
           </a>
         </div>
         <div class="flex-item">
           <a href="#">
-            <img src="static/img/bestseller-2.webp" alt="sneaker" />
-            <div class="flex-container description">
-              <div>
-                <h3>Snob Sneaker</h3>
-                <p>Herenschoen</p>
-              </div>
+            <img src="static/img/best_bramfleece.webp" alt="fleece" />
+            <div>
+              <h3>Bram Fleece</h3>
               <p>€ 119,99</p>
             </div>
           </a>
         </div>
         <div class="flex-item">
           <a href="#">
-            <img src="static/img/bestseller-3.webp" alt="sneaker" />
-            <div class="flex-container description">
-              <div>
-                <h3>Flop Sneaker</h3>
-                <p>Herenschoen</p>
-              </div>
+            <img src="static/img/best_greenbag.webp" alt="jacket" />
+            <div>
+              <h3>Greenbag</h3>
+              <p>€ 84,49</p>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="#">
+            <img src="static/img/best_leatherjacket.webp" alt="pants" />
+            <div>
+              <h3>Leather Jacket</h3>
               <p>€ 84,49</p>
             </div>
           </a>
@@ -89,52 +87,31 @@
       </div>
     </section>
 
-    <section id="categories">
-      <h2>Niet te missen deals</h2>
-      <div class="flex-container indent">
-        <figure class="flex-item">
-          <a href="#">
-            <img src="static/img/deals-dames.webp" alt="deals" />
-            <figcaption>
-              <span class="btn">Dames</span>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="flex-item">
-          <a href="#">
-            <img src="static/img/deals-heren.webp" alt="deals" />
-            <figcaption>
-              <span class="btn">Heren</span>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="flex-item">
-          <a href="#">
-            <img src="static/img/deals-kids.webp" alt="deals" />
-            <figcaption>
-              <span class="btn">Kids</span>
-            </figcaption>
-          </a>
-        </figure>
+    <section id="community">
+      <h2>Get Inspired by the Buchan Community's fits:</h2>
+      <div class="flex-container">
+        <div class="flex-item">
+          <img src="static/img/community_cargobag.webp" alt="deals" />
+          <a class="btn cmy-1">Green Bag</a>
+        </div>
+        <div class="flex-item">
+          <img src="static/img/community_greenhoodie.webp" alt="deals" />
+          <a class="btn cmy-2">Hoodie</a>
+        </div>
+        <div class="flex-item">
+          <img src="static/img/community_rain.webp" alt="deals" />
+          <a class="btn cmy-3">Buchan Rain</a>
+        </div>
       </div>
     </section>
 
     <section id="membership">
-      <h2>Join Us</h2>
-      <div class="flex-container bgc-highlights">
-        <div class="flex-item">
-          <h4>Member highlights</h4>
-          <p>
-            Ontdek wat er gebeurt in de wereld van ons lidmaatschap. Word lid
-            van Nike, ontdek exclusieve producten, events en verbeter je
-            prestaties nu!
-          </p>
-          <a href="#">
-            <span class="btn">Kom meer te weten</span>
-          </a>
-        </div>
-        <div class="flex-item bgd-joinus"></div>
-      </div>
+      <a href="#" class="btn">Shop All Products</a>
+      <h4>SIGN UP NOW! (and get 5% off) ↓</h4>
+      <input type="text" placeholder="📫 Email" />
+      <h3>No no, we're not just another clothing brand!</h3>
+      <p>Buchan stands for inspiring the creative youth. When wearing Buchan you can remind yourself you're truly capable of greatness! <br>
+        Not only to dream but actually take action and turn your ideas into reality. </p>
     </section>
   </main>
 

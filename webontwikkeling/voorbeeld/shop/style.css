@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,26 +10,37 @@
 
 /* vormgeving elementen */
 
+html {
+  background-color: hsl(333, 5%, 7%);
+}
+
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: #f0f7f7;
+  color: #372017;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.5;
 }
 
 h2 {
-  margin-bottom: 1.5em;
+  margin-bottom: 1rem;
   font-weight: 500;
 }
 
 h3 {
+  margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 500;
 }
 
 h4 {
-  margin-bottom: 2em;
+  margin-bottom: 1rem;
+  font-weight: 400;
   text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  color: #372017a0;
 }
 
 a {
@@ -39,13 +48,24 @@ a {
   text-decoration-line: none;
 }
 
+a:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.5px;
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
-i:hover {
-  transform: scale(1.1);
+input {
+  border: #ddd 1px solid;
+  padding: 0.5rem 1ch;
+}
+
+input:hover {
+  border-color: #aaa;
 }
 
 /* vormgeving classes */
@@ -55,15 +75,11 @@ i:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.align-center {
-  align-items: center;
-}
-
-.self-center {
-  align-self: center;
+.flex-item {
+  flex: 1;
 }
 
 .column {
@@ -71,49 +87,51 @@ i:hover {
   justify-content: start;
 }
 
-.indent {
-  margin: 0 auto;
-  padding: 0 5vw;
-}
-
-.flex-item {
-  flex: 1;
-}
-
 .btn {
   display: inline-block;
-  margin-right: 2ch;
-  border-radius: 1rem;
-  padding: 0.3em 1.5ch;
+  margin-bottom: 1.5rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
   background-color: #fff;
   font-weight: 500;
   text-align: center;
 }
 
 .btn:hover {
-  filter: invert(0.25);
+  transform: scale(105%);
 }
 
-.invert {
-  filter: invert(1);
+/* HEADER */
+
+.promo {
+  border-bottom: #ddd thin solid;
+  padding: 0.2rem;
+  background-color: hsl(333, 5%, 7%);
+  text-align: center;
 }
 
-/* vormgeving header */
+.promo a {
+  font-size: 0.8rem;
+  color: white;
+}
 
 header {
-  background-color: #fff;
+  padding: 2rem 4vw;
+  background-color: #f4fbfb;
 }
 
-header img {
-  width: 4rem;
+header img.logo {
+  margin: 0 auto;
+  width: 8rem;
 }
 
 header img:hover {
   opacity: 0.6;
+  transform: scale(105%);
 }
 
 header nav {
-  margin-bottom: 1.5rem;
+  padding-top: 4vh;
   text-align: center;
 }
 
@@ -127,128 +145,96 @@ header nav a {
   text-transform: uppercase;
 }
 
-header nav a:hover {
-  text-decoration-line: underline;
-  text-underline-offset: 0.1rem;
-  text-decoration-thickness: 0.5px;
-}
-
 header .icons {
   display: flex;
+  align-items: center;
   justify-content: end;
+  gap: 1rem;
 }
 
 header img.icon {
-  margin: 0 0.5rem;
-  width: 1.1rem;
+  width: 20px;
 }
 
-header img.logo {
-  margin: 0 auto;
-}
-
-header i:hover {
-  color: #666;
-}
-
-header input {
-  border: #ddd 1px solid;
-  padding: 0.5em 1ch;
-}
-
-header .promo {
-  margin-bottom: 1rem;
-  width: 100%;
-  border-bottom: #ddd thin solid;
-  padding: 4px;
-  background-color: hsl(333, 5%, 7%);
-  text-align: center;
-}
-
-header .promo a {
-  font-size: 0.8rem;
-  color: white;
-}
-
-header a:hover {
-  text-decoration-line: underline;
-}
-
-/* vormgeving main */
+/* MAIN */
 
 main {
-  margin-bottom: 3rem;
-  padding: 0 5vw;
-  background-color: #fff;
+  background-color: #f0f7f7;
 }
 
 section {
-  margin-bottom: 4rem;
+  padding: 2rem 4vw;
 }
 
-/* herobanner */
+/* BANNER */
 
-#herobanner {
-  height: 30vh;
-  background-image: url("static/img/roberto-nickson-g3-eeBDiUbc-unsplash.jpg");
+#banner {
+  padding: 8rem 8vw;
+  background-image: url("static/img/banner_roberto-nickson-g3-eeBDiUbc-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
-/* featured */
+/* BESTSELLERS */
 
-#featured img {
+#bestsellers img {
+  border-radius: 1rem;
   margin-bottom: 1.25rem;
   transition: transform 150ms ease;
 }
 
-#featured img:hover {
+#bestsellers img:hover {
   transform: scale(1.02);
 }
 
-#featured .description {
+#bestsellers .description {
   gap: 0;
 }
 
-/* categories */
+/* COMMUNITY */
 
-#categories img {
+#community img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
-#categories figure {
+#community .flex-item {
   position: relative;
 }
 
-/* → → een absolute gepositioneerd element wordt gepositioneerd ten opzichte van het eerste bovenliggende element dat iets anders als de standaard static position heeft ← ← */
-
-#categories figcaption {
+#community .btn {
   position: absolute;
-  bottom: 12%;
-  left: 15%;
 }
 
-/* membership */
-
-#membership .bgc-highlights {
-  background-color: #fed;
+.cmy-1 {
+  bottom: 30%;
+  left: 26%;
 }
 
-#membership .flex-item {
-  padding: 2rem;
+.cmy-2 {
+  bottom: 36%;
+  left: 42%;
 }
 
-#membership .bgd-joinus {
-  background-image: url("static/img/joinus.webp");
-  background-size: cover;
-  background-position: right;
+.cmy-3 {
+  bottom: 22%;
+  left: 14%;
 }
 
-#membership p {
-  margin-bottom: 2.5em;
+/* MEMBERSHIP */
+
+#membership {
+  background-color: #f1f2ed;
+  text-align: center;
 }
 
-/* vormgeving footer */
+#membership input {
+  margin-bottom: 1rem;
+}
+/* FOOTER */
 
 footer {
   padding: 5vw 10vw;
@@ -284,8 +270,6 @@ footer a {
 
 footer a:hover {
   color: #fff;
-  text-decoration-line: underline;
-  text-underline-offset: 0.2em;
 }
 
 footer i {
@@ -295,11 +279,3 @@ footer i {
 footer img:hover {
   transform: scale(1.1);
 }
-
-/* responsive */
-
-/* @media screen and (max-width: 850px) {
-    header nav {
-        display: none;
-    }
-} */
