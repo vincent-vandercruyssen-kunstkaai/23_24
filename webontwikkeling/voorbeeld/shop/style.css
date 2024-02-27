@@ -238,44 +238,16 @@ section {
 
 footer {
   padding: 5vw 10vw;
-  background-color: #111;
-  color: #666;
+  background-color: hsl(333, 5%, 7%);
+  color: #ccc;
+  text-align: center;
 }
 
-footer > .flex-container:first-child {
-  margin-bottom: 2rem;
-}
-
-footer ul li {
-  font-size: 0.8rem;
-  line-height: 2;
-  list-style-type: none;
-}
-
-footer ul li:first-child a,
-footer ul:first-child li a {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-footer ul:first-child li a {
-  font-size: 0.8rem;
-}
-
-footer a {
+footer a,
+footer p {
   color: #ccc;
 }
 
 footer a:hover {
   color: #fff;
-}
-
-footer i {
-  font-size: 1.6rem;
-}
-
-footer img:hover {
-  transform: scale(1.1);
 }
