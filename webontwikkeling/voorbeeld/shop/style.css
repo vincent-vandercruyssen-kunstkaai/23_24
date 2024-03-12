@@ -3,59 +3,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
-  margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
 
-/* ELEMENTEN */
-
 html {
-  background-color: hsl(333, 5%, 7%);
+  background-color: #131112;
 }
 
 body {
+  margin: 0;
   background-color: #f0f7f7;
   color: #372017;
   font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
 }
 
-h2 {
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
+/* ELEMENTEN */
 
-h3 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+h2,
+h3,
+h4 {
   font-weight: 500;
 }
 
 h4 {
-  margin-bottom: 1rem;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
 p {
-  font-weight: 400;
   color: #372017a0;
 }
 
 a {
-  color: #000;
+  color: #000000;
   text-decoration-line: none;
 }
 
 a:hover {
   text-decoration-line: underline;
   text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.5px;
 }
 
 img {
-  display: block;
+  vertical-align: bottom;
   max-width: 100%;
 }
 
@@ -65,95 +55,67 @@ input {
 }
 
 input:hover {
-  border-color: #aaa;
+  border-color: #aaaaaa;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 0 1ch;
 }
 
 /* CLASSES */
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
 }
 
-.flex-item {
-  flex: 1;
-}
-
-.column {
-  flex-direction: column;
-  justify-content: start;
-}
-
-.btn {
+.button {
   display: inline-block;
-  margin-bottom: 1.5rem;
   border-radius: 0.4rem;
   padding: 0.8rem;
-  background-color: #fff;
+  background-color: #ffffff;
   font-weight: 500;
   text-align: center;
-}
-
-.btn:hover {
-  transform: scale(105%);
 }
 
 /* HEADER */
 
 .promo {
-  border-bottom: #ddd thin solid;
-  padding: 0.2rem;
-  background-color: hsl(333, 5%, 7%);
+  padding: 0.5rem;
+  background-color: #131112;
   text-align: center;
 }
 
 .promo a {
   font-size: 0.8rem;
-  color: white;
+  color: #ffffff;
 }
 
 header {
-  padding: 2rem 4vw;
+  padding: 2rem 4%;
   background-color: #f4fbfb;
-}
-
-header img.logo {
-  margin: 0 auto;
-  width: 8rem;
-}
-
-header img:hover {
-  opacity: 0.6;
-  transform: scale(105%);
-}
-
-header nav {
-  padding-top: 4vh;
   text-align: center;
 }
 
-header nav li {
-  display: inline-block;
+header img {
+  margin: 0 0.5rem;
+  width: 1.25rem;
 }
 
-header nav a {
-  padding: 0 1ch;
+header .logo {
+  width: 8rem;
+}
+
+header nav {
+  padding-top: 1.5rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-}
-
-header .icons {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
-
-header img.icon {
-  width: 20px;
 }
 
 /* MAIN */
@@ -162,34 +124,28 @@ main {
   background-color: #f0f7f7;
 }
 
+main .flex-container div {
+  flex: 1;
+}
+
 section {
-  padding: 2rem 4vw;
+  padding: 2rem 4%;
 }
 
 /* BANNER */
 
 #banner {
-  padding: 8rem 8vw;
-  background-image: url("static/img/banner_roberto-nickson-g3-eeBDiUbc-unsplash.jpg");
+  padding: 8rem 8%;
+  background-image: url("images/banner_roberto-nickson-g3-eeBDiUbc-unsplash.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
 }
 
-/* BESTSELLERS */
+/* MINISHOP */
 
-#bestsellers img {
+#minishop img {
   border-radius: 1rem;
-  margin-bottom: 1.25rem;
-  transition: transform 150ms ease;
-}
-
-#bestsellers img:hover {
-  transform: scale(1.02);
-}
-
-#bestsellers .description {
-  gap: 0;
 }
 
 /* COMMUNITY */
@@ -201,25 +157,30 @@ section {
   border-radius: 0.5rem;
 }
 
-#community .flex-item {
+#community .flex-container {
+  padding: 0 4%;
+}
+
+#community .flex-container div {
   position: relative;
 }
 
-#community .btn {
+#community .button {
   position: absolute;
+  cursor: pointer;
 }
 
-.cmy-1 {
+.button-1 {
   bottom: 30%;
   left: 26%;
 }
 
-.cmy-2 {
+.button-2 {
   bottom: 36%;
   left: 42%;
 }
 
-.cmy-3 {
+.button-3 {
   bottom: 22%;
   left: 14%;
 }
@@ -231,23 +192,29 @@ section {
   text-align: center;
 }
 
-#membership input {
-  margin-bottom: 1rem;
-}
 /* FOOTER */
 
 footer {
-  padding: 5vw 10vw;
-  background-color: hsl(333, 5%, 7%);
-  color: #ccc;
+  padding: 3rem 8%;
+  background-color: #131112;
+  color: #cccccc;
   text-align: center;
+}
+
+footer img {
+  margin: 0 1ch;
+  width: 1.25rem;
+}
+
+footer img:hover {
+  filter: brightness(150%);
 }
 
 footer a,
 footer p {
-  color: #ccc;
+  color: #cccccc;
 }
 
 footer a:hover {
-  color: #fff;
+  color: #ffffff;
 }
