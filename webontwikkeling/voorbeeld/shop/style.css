@@ -124,7 +124,7 @@ main {
   background-color: #f0f7f7;
 }
 
-main .flex-container div {
+main .flex-container > div {
   flex: 1;
 }
 
@@ -161,7 +161,7 @@ section {
   padding: 0 4%;
 }
 
-#community .flex-container div {
+#community .flex-container > div {
   position: relative;
 }
 
