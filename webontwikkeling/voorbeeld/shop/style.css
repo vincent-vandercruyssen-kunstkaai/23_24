@@ -192,6 +192,28 @@ section {
   text-align: center;
 }
 
+/* ITEM */
+
+#item .flex-container {
+  align-items: start;
+  gap: 4%;
+}
+
+#item img {
+  margin-bottom: 2rem;
+}
+
+select,
+input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+select,
+button {
+  padding: 0.2rem;
+}
+
 /* FOOTER */
 
 footer {
