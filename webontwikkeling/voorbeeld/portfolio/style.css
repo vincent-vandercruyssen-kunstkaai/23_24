@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #c3c3c3;
+  font-family: system-ui;
+}
+
+nav li {
+  display: inline;
+}
+
+header,
+main {
+  padding: 0 5%;
+}
+
+.carousel {
+  width: 100%;
+  text-align: center;
+}
+
+#main-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 50px;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}

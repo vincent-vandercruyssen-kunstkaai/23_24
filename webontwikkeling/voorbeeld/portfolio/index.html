@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Galerij</h2>
+            <img src="images/thumb1.jpg" alt="Main Image" id="main-image" />
+            <div class="thumbnail-container">
+                <!-- Thumbnails -->
+                <img src="images/thumb1.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('images/thumb1.jpg')" />
+                <img src="images/thumb2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('images/thumb2.jpg')" />
+                <img src="images/thumb3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('images/thumb3.jpg')" />
+                <!-- Voeg meer thumbnails toe zoals nodig -->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
